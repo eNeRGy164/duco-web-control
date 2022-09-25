@@ -1,0 +1,7 @@
+Dockerfile
+node_modules
+npm-debug.log
+cert/*
+*.ps1
+*.md
+images/*

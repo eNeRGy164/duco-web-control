@@ -1,0 +1,24 @@
+{
+  "name": "duco-web",
+  "version": "1.0.0",
+  "description": "DUCO web control",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "duco"
+  ],
+  "author": "Michaël Hompus",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "https": "^1.0.0",
+    "mqtt": "^4.3.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

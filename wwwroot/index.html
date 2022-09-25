@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Michaël Hompus">
+        <title>DUCO web control</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <img src="duco.png" alt="DUCO" />
+        </header>
+        <section id="status">
+            <h1>Status</h1>
+            <div>
+                <div id="mode" class="tile">
+                    <h2>Mode</h2>
+                    <div class="value"><span></span> <span></span></div>
+                </div>
+                <div id="ventilation" class="tile">
+                    <h2>Ventilation</h2>
+                    <div class="value"><span></span>%</div>
+                </div>
+                <div id="fan" class="tile">
+                    <h2>Fan speed</h2>
+                    <div class="value"><span></span>%</div>
+                </div>
+                <div id="temp" class="tile">
+                    <h2>Temperature</h2>
+                    <div class="value"><span></span>°</div>
+                </div>
+                <div id="humidity" class="tile">
+                    <h2>Humidity</h2>
+                    <div class="value"><span></span>%</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="control">
+            <h1>Control</h1>
+            <div>
+                <input type="radio" name="mode" value="AUTO" id="mode-0" onchange="setVentilationMode(this)" />
+                <label for="mode-0">auto</label>
+                <h2>permanent</h2>
+                <input type="radio" name="mode" value="PERMANENTLOW" id="mode-11" onchange="setVentilationMode(this)" />
+                <label for="mode-11">low</label>
+                <input type="radio" name="mode" value="PERMANENTMIDDLE" id="mode-12" onchange="setVentilationMode(this)" />
+                <label for="mode-12">middle</label>
+                <input type="radio" name="mode" value="PERMANENTHIGH" id="mode-13" onchange="setVentilationMode(this)" />
+                <label for="mode-13">high</label>
+                <h2>15 minutes</h2>
+                <input type="radio" name="mode" value="LOW" id="mode-1" onchange="setVentilationMode(this)" />
+                <label for="mode-1">low</label>
+                <input type="radio" name="mode" value="MIDDLE" id="mode-2" onchange="setVentilationMode(this)" />
+                <label for="mode-2">middle</label>
+                <input type="radio" name="mode" value="HIGH" id="mode-3" onchange="setVentilationMode(this)" />
+                <label for="mode-3">high</label>
+            </div>
+        </section>
+        <script src="script.js" async></script>
+    </body>
+</html>
